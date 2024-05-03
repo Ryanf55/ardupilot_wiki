@@ -27,11 +27,13 @@ Additional Parts
 ----------------
 
 - Compatible with the :ref:`Cube autopilot <common-thecube-overview>` with direct mounting screws for the standard carrier board
+- Compatible with the CubePilot HERE 3/3+ DroneCAN RTK GPS/IMU/Compass <https://docs.cubepilot.org/user-guides/here-3/here-3-manual> with direct mounting screws for the GPS Mast
 - 8000mAh to 12000mAh 6S battery
 - RC transmitter with at least 6 channels
 - (Optional) four `5cm (2inch) C-clamps <https://www.amazon.com/C-Clamp-Industrial-Strength-Woodworking-Building/dp/B0BLC44XHT>`__ to ease assembly
 - (Optional) `solder sleeves <https://www.amazon.com/TICONN-Connectors-Waterproof-Insulated-Electrical/dp/B07GDDKJ1D>`__ to shorten ESC wires
 - (Optional) 2.5cm x 40cm velcro battery straps to replace very short straps provided
+
 
 Connection and Setup
 --------------------
@@ -69,6 +71,11 @@ Build issues and advice
 -----------------------
 
 Below is a list of issues and recommendations
+
+- If using a CubePilot Here 3 Istand, the antenna mast has direct mounting holes on the front of the EDU650 top plate.
+    The GPS mast is best installed on the top plate before both plates are sandwiched together.
+
+    TODO ADD PICTURE
 
 - Assembly is difficult because both upper and lower plates are required to hold the legs in place.  Temporarily use four `5cm (2inch) C-clamps <https://www.amazon.com/C-Clamp-Industrial-Strength-Woodworking-Building/dp/B0BLC44XHT>`__ to hold the lower plate and legs together.
 - The ESC wires are too long resulting in messy wiring.  These can be shortened using `solder sleeves <https://www.amazon.com/TICONN-Connectors-Waterproof-Insulated-Electrical/dp/B07GDDKJ1D>`__
