@@ -16,14 +16,26 @@ Usage
 
 This page assumes that you've successfully followed the ROS 2 basic setups from this wiki: :ref:`ROS 2 <ros2>`, :ref:`ROS 2 with SITL <ros2-sitl>`, and :ref:`ROS 2 with gazebo <ros2-gazebo>`.
 
-Once that's done, simply run:
+Once that's done, start the Micro ROS Agent:
 
-.. code-block:: bash
+.. tabs::
 
-    cd ~/ardu_ws/src
-    source ~/ardu_ws/install/setup.bash
-    cd ardupilot/libraries/AP_DDS
-    ros2 run micro_ros_agent micro_ros_agent udp4 -p 2019 -r dds_xrce_profile.xml
+    .. group-tab:: ArduPilot 4.5
+
+        .. code-block:: bash
+
+            source install/setup.bash
+            ros2 run micro_ros_agent micro_ros_agent udp4 -p 2019 -r src/ardupilot/libraries/AP_DDS/dds_xrce_profile.xml
+
+    .. group-tab:: ArduPilot 4.6 and later
+
+        .. code-block:: bash
+
+            source install/setup.bash
+            ros2 run micro_ros_agent micro_ros_agent udp4 -p 2019
+
+
+Then, run SITL.
 
 .. code-block:: bash
 
