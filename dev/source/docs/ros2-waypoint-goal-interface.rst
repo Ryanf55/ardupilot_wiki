@@ -136,3 +136,13 @@ Here's a quick video showcasing the results expected from this tutorial:
     :width: 100%
 
 For more information, refer to this `PR <https://github.com/ArduPilot/ardupilot/pull/25722>`__.
+
+Going futher
+============
+
+Try creating a `CopterWaypointFollower` to achieve the same behavior on Copter.
+Make sure to:
+
+* Change the mode numbers for Copter
+* Use the takeoff service becuase Copter doesn't have a takeoff mode
+
