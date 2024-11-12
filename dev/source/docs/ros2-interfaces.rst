@@ -70,6 +70,11 @@ Pose, Rates, and Coordinates
    <td>This is the filtered AHRS's velocity in the local ENU frame relative to home.</td>
    </tr>
    <tr>
+   <td>ap/pose/filtered</td>
+   <td>geometry_msgs/msg/PoseStamped</td> 
+   <td>This is the filtered AHRS's pose in the local ENU frame relative to home.</td>
+   </tr>
+   <tr>
    <td>ap/geopose/filtered</td>
    <td>geographic_msgs/msg/GeoPoseStamped</td> 
    <td>This is the filtered AHRS's pose (position+orientation) in global coordinates</td>
