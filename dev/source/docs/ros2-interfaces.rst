@@ -244,6 +244,6 @@ If breaking changes are required, the ArduPilot release notes will make that cle
 Developers should not expect ABI stability on ``exerimental`` interfaces.
 
 Because ArduPilot does not follow the same release timeline as ROS 2, and
-the development team for the ROS interface still in its early stages,
+the development team for the ROS interface is still in its early stages,
 ArduPilot does not yet support a stable ABI across multiple ROS distributions.
 The current ROS version supported is ``humble``.
