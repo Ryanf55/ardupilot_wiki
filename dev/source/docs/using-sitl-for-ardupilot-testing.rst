@@ -339,7 +339,7 @@ forward UDP packets to the GCSs network address.
 
 .. _using-sitl-for-ardupilot-testing_sitl_with_mavproxy_udp:
 
-Using MAVProxy (UDP) forwarding
+Using MAVProxy forwarding
 -------------------------------
 
 Multiple ground stations can be connected to SITL by using MAVProxy to
@@ -378,6 +378,17 @@ The GCS would then connect to SITL by listening on that UDP port.
    port 14550 or 14551. We can choose to connect another GCS to the
    remaining port, and add more ports if needed. 
 
+Some applications prefer websocket connections.
+
+For example, for the Telemetry Dashboard, you can add a websocket output with
+
+::
+
+    output add wsserver:0.0.0.0:5863
+
+    https://firmware.ardupilot.org/Tools/WebTools/TelemetryDashboard/
+
+
 Using Mission Planner Forwarding
 --------------------------------
 
@@ -385,6 +396,45 @@ Mission Planner can forward to other GCS using it Mavlink Mirror. Under SETUP/Ad
 
 .. image:: ../../../images/mavlink-forwarding.jpg
   :target: ../_images/mavlink-forwarding.jpg
+
+Using MAVProxy (Websocket) forwarding
+-------------------------------
+
+Multiple ground stations can be connected to SITL by using MAVProxy to
+forward UDP packets to the GCSs network address (for example, forwarding
+to another Windows box or Android tablet on your local network). The
+simulated vehicle can then be controlled and viewed through any attached
+GCS.
+
+First find the IP address of the machine running the GCS. How you get
+the address is platform dependent (on Windows you can use the 'ipconfig'
+command to find the computer's address).
+
+Assuming the IP address of the GCS is 192.168.14.82, you would add this
+address/port as a MAVProxy output using:
+
+::
+
+    output add 192.168.14.82:14550
+
+The GCS would then connect to SITL by listening on that UDP port.
+
+.. tip::
+
+   If you're running the GCS on the **same machine** as SITL then an
+   appropriate output may already exist. Check this by calling ``output``
+   on the *MAVProxy command prompt*:
+
+   ::
+
+       GUIDED> output
+       GUIDED> 2 outputs
+       0: 127.0.0.1:14550
+       1: 127.0.0.1:14551
+
+   In this case we can connect a GCS running on the same machine to UDP
+   port 14550 or 14551. We can choose to connect another GCS to the
+   remaining port, and add more ports if needed. 
 
 SITL Simulation Parameters
 ==========================

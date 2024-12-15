@@ -11,7 +11,18 @@ It is represented as an arbitrary polygon of waypoints around the flying
 area in a fixed-wing vehicle. In ArduCopter, it is a radius and altitude
 parameter(s) representing a cylinder around the flying area.
 
-A fence menu is available on the GUI console.
+A fence menu is available on the GUI console's ``Fence`` tab.
+
+MAVProxy uses the mission protocol to allow circular fences, link to mavproxy.
+
+  * Fence protocol part is part of MAVLink
+
+Desires:
+
+* Altitude fence with a frame (relative to ground)
+* Polygon and circle fences with airspaces (layer cake)
+  * Currently supported in Lua
+
 
 fence list
 ==========
@@ -55,6 +66,7 @@ fence clear
 ===========
 
 Deletes all geofence coordinates.
+Any fences on the MAVProxy map will be removed.
 
 fence move
 ==========
