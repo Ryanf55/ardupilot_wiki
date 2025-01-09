@@ -189,6 +189,12 @@ and then begin a gliding descent. Watch the telemetry graphs or look at the Data
 by increasing ``PTCH2SRV_IMAX`` and :ref:`TECS_INTEG_GAIN<TECS_INTEG_GAIN>` to achieve good airspeed
 tracking in gliding flight.
 
+In AUTO mode, the target airspeed for gliding can be adjusted by :ref:`SOAR_CRSE_ARSPD<SOAR_CRSE_ARSPD>`,
+The special case value of -1 can be used to glide using the "speed to fly" principle which adjusts the 
+gliding airspeed based on the wind and expected thermal updraft velocity to achieve the optimal groundspeed.
+When thermals are strong, and it's flying into a headwind, the gliding speed will be faster than when
+thermals are weak and it's flying with a tailwind.
+
 Notes
 =====
 
