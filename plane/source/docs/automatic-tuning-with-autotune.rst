@@ -32,6 +32,8 @@ You can also autotune the yaw axis during AUTOTUNE for yaw rate control in :ref:
 
 .. warning:: Large QuadPlanes can be difficult to fly manually while monitoring the GCS for tune progress messages or if you are not experienced in flying in pilot guided modes. In these cases, it is safer to do the tuning while in a repeating fixed course mission (ie. a rectangular loop for example) in AUTO or while LOITERing, using the the above RC Aux Switch to enable autotuning while not having to constantly guide the vehicle on course.
 
+.. warning:: Autotune is not designed to work well with :ref:`RUDDER_ONLY<RUDDER_ONLY>` vehicles for tuning roll. Consider manually tuning the roll axis.
+
 The :ref:`AUTOTUNE_AXES<AUTOTUNE_AXES>` bitmask selects which axes will be tuned while in Autotune. Default is roll, pitch and yaw.
 
 You also should choose a tuning level by setting the :ref:`AUTOTUNE_LEVEL<AUTOTUNE_LEVEL>`
