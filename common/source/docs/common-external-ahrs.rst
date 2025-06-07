@@ -14,6 +14,7 @@ Currently, ArduPilot supports these systems:
 - `MicroStrain 3DM® Series <https://www.microstrain.com/inertial-sensors/all-sensors>`_
 - `VectorNav <https://www.vectornav.com/products>`__
 - `Inertialabs INS-P <https://inertiallabs.com/wp-content/uploads/2023/09/INS-B-P-D-DL_Datasheet_rev-6.27_August_2023.pdf>`__
+- `Trimble PX-1 RTX <https://applanix.trimble.com/en/hardware/trimble-px-1-rtx>`_
 
 Setup and Configuration
 =======================
@@ -104,4 +105,5 @@ With higher baud rates, MicroStrain7 should be suitable for Copter and QuadPlane
     :hidden:
 
     common-external-ahrs-vectornav
+    common-external-ahrs-trimble-px1
 

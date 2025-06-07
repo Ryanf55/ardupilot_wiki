@@ -5,6 +5,10 @@
 Trimble PX-1 RTX
 =====================
 
+.. warning::
+
+    The usage of this GPS driver is deprecated. Instead, use :ref:`common-external-ahrs-trimble-px1`.
+
 The Trimble PX-1 RTX is a relatively expensive but also highly accurate RTX GNSS+INS.
 It supports corrections from a satellite or cellular network through `CenterPoint® RTX Correction service <https://positioningservices.trimble.com/en/rtx>`__.
 RTX provides centimeter accuracy without the use of a base station.
